@@ -1,0 +1,374 @@
+jQuery(document).ready(function(jQuery) {
+   'use strict';
+   //searchBAr Toggle
+	jQuery.noConflict();
+		jQuery("#searchbtn").on('click', function(event){
+			event.preventDefault();
+   			if(jQuery(this).css("margin-top")=='0px') {
+		        jQuery('#searchbtn').animate({'margin-top':'+=99px'});
+		        jQuery(".advSeachBar").animate({'bottom':'-98px'});
+		        jQuery('#searchbtn').find('i.fa-caret-down').removeClass("fa-caret-down") .addClass("fa-caret-up");
+		        
+		    } else {
+		        jQuery('#searchbtn').animate({'margin-top':'-=99px'});
+		        jQuery(".advSeachBar").animate({'bottom':'0'});
+		        jQuery('#searchbtn').find('i.fa-caret-up').removeClass("fa-caret-up") .addClass("fa-caret-down");
+
+		    }
+		});
+
+		//carousel
+			jQuery('.owl-carousel').each(function(){
+				
+		    if( jQuery(this).find("div.item").length > 4){
+
+		    	var owl = jQuery('.owl-carousel');
+				jQuery(".prev").on('click', function () {
+				    owl.trigger('prev.owl.carousel');
+				});
+
+				jQuery(".next").on('click', function () {
+				    owl.trigger('next.owl.carousel');
+				});
+
+		   		jQuery(this).owlCarousel({
+		   			items: 4,
+				    loop: true,
+				    autoplay:true,
+				    autoplayTimeout:3000,
+		    		autoplayHoverPause:true,
+		      		margin: 0,
+		      		responsiveClass:true,
+		      		dots:false,
+		      		//autoWidth:true,
+				    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        },
+			        600:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:4,
+			            nav:false,
+			        },
+			        1700:{
+			        	items:5,
+			            nav:false,
+			        }
+			    	}
+		   		});
+		   		
+		   	}else{
+				
+		   		jQuery(this).owlCarousel({
+				    loop: false,
+				    autoplay:false,
+		    		autoplayHoverPause:true,
+		      		margin: 0,
+		      		responsiveClass:true,
+		      		dots:false,
+		      		//autoWidth:true,
+				    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        },
+			        600:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:4,
+			            nav:false,
+			        },
+			        1700:{
+			        	items:5,
+			            nav:false,
+			        }
+			    	}
+		   		});
+		   	}
+		});
+	
+	//li.marquee
+	jQuery('.str3').liMarquee({
+			direction: 'left',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: true,		
+			drag: true			
+		});
+  	//back to top
+		var backtotop = '#back-to-top';
+        if (jQuery(backtotop).length) {
+            var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = jQuery(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        jQuery(backtotop).addClass('show');
+                    } else {
+                        jQuery(backtotop).removeClass('show');
+                    }
+                };
+            backToTop();
+            jQuery(window).on('scroll', function () {
+                backToTop();
+            });
+            jQuery('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                jQuery('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
+    //image Slider
+	jQuery(".imageSlider").on({
+	    mouseenter: function () {
+	        jQuery(".orbitSlide").slideDown();
+	    },
+	    mouseleave: function () {
+	        jQuery(".orbitSlide").slideUp();
+	    }
+	});
+	//category carousel slide
+	jQuery('.owl-carousel-category').each(function(){
+				
+		    if( jQuery(this).find("div.item-cat").length > 5){
+
+		    	var owl = jQuery('.owl-carousel-category');
+				jQuery(".prev").on('click', function () {
+				    owl.trigger('prev.owl.carousel');
+				});
+
+				jQuery(".next").on('click', function () {
+				    owl.trigger('next.owl.carousel');
+				});
+
+		   		owl.owlCarousel({
+		   			items: 6,
+				    loop: true,
+				    autoplay:true,
+				    autoplayTimeout:5000,
+		    		autoplayHoverPause:true,
+		      		margin: 0,
+		      		responsiveClass:true,
+		      		dots:false,
+		      		autoWidth:true,
+				    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        },
+			        600:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:4,
+			            nav:false,
+			        }
+			    	}
+		   		});
+		   		
+		   	}else{
+				
+		   		jQuery(this).owlCarousel({
+				    loop: false,
+				    autoplay:false,
+		    		autoplayHoverPause:true,
+		      		margin: 0,
+		      		responsiveClass:true,
+		      		dots:false,
+		      		//autoWidth:true,
+				    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        },
+			        600:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:4,
+			            nav:false,
+			        }
+			    	}
+		   		});
+		   	}
+		});
+	//shop carousel
+	//category carousel slide
+	jQuery('.owl-carousel-shop').each(function(){
+				
+		    if( jQuery(this).find("div.shop-item").length > 3){
+
+		    	var owl = jQuery('.owl-carousel-shop');
+				jQuery(".prev").on('click', function () {
+				    owl.trigger('prev.owl.carousel');
+				});
+
+				jQuery(".next").on('click', function () {
+				    owl.trigger('next.owl.carousel');
+				});
+
+		   		owl.owlCarousel({
+		   			items: 4,
+				    loop: true,
+				    autoplay:true,
+				    autoplayTimeout:5000,
+		    		autoplayHoverPause:true,
+		      		margin: 30,
+		      		responsiveClass:true,
+		      		dots:false,		      		
+				    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        },
+			        600:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:4,
+			            nav:false,
+			        }
+			    	}
+		   		});
+		   		
+		   	}else{
+				
+		   		jQuery(this).owlCarousel({
+				    loop: false,
+				    autoplay:false,
+		    		autoplayHoverPause:true,
+		      		margin: 0,
+		      		responsiveClass:true,
+		      		dots:false,
+		      		//autoWidth:true,
+				    responsive:{
+			        0:{
+			            items:1,
+			            nav:false
+			        },
+			        600:{
+			            items:2,
+			            nav:false
+			        },
+			        1000:{
+			            items:4,
+			            nav:false,
+			        }
+			    	}
+		   		});
+		   	}
+		});
+	//video
+	var click = jQuery('.iframe-overlay') .find('a');
+	jQuery(click) .on('click', function(event){
+		event.preventDefault();
+		jQuery(this) .parent() .hide();
+	});
+	//Custom Fields At FrontEnd
+	jQuery('#main_cat').on('change', function() {
+		var val = jQuery(this).val();
+  		jQuery(this).parent().parent().parent().find(".wrap-content").css({"display":"none"});
+  		jQuery(this).parent().parent().parent().find("#cat-" + val).css({"display":"block"});
+	});
+	jQuery('#sub_cat').on('change', function(){
+		var val = jQuery(this).val();
+		jQuery(this).parent().parent().parent().find(".wrap-content").css({"display":"none"});
+  		jQuery(this).parent().parent().parent().find("#cat-" + val).css({"display":"block"});
+	});
+	//Toggle
+	jQuery(".togglebox").hide();
+	//slide up and down when click over heading 2
+	
+	jQuery("h4").click(function(){
+		
+		// slide toggle effect set to slow you can set it to fast too.
+		jQuery(this).toggleClass("active").next(".togglebox").slideToggle("slow");
+	
+		return true;
+	
+	});
+	//Classiera AJax Search
+	jQuery('.classieraSearchAJax').keypress(function(e) {
+			
+			// prevent browser autocomplete
+			jQuery(this).attr('autocomplete','off');
+			 
+			// get search term
+			var searchTerm = jQuery(this).val();
+			//alert(searchTerm);
+			 
+			// send request when the lenght is gt 2 letters
+			if(searchTerm.length > 2){
+				jQuery('.load-gif').show();
+				var data = {
+					'action': 'get_search_classiera',
+					'CID': searchTerm,
+				};
+				//ajaxurl : BASE+'/wp-admin/admin-ajax.php',
+				jQuery.post(ajaxurl, data, function(response) {	
+					
+					jQuery(".classieraAjaxResult").html(response);
+					jQuery('.classieraAjaxResult').show();
+					jQuery('.load-gif').hide();
+				});
+			}
+			
+		});		
+	//Classiera AJax Search
+	
+});
+//Embed Result
+	jQuery('.classieraAjaxResult li a.SearchLink').live('click', function(e){
+		e.preventDefault();
+		var myResult = jQuery(this).attr('name');
+		//alert(myResult);
+		jQuery('.classieraSearchAJax').val(myResult);
+		jQuery('.classieraAjaxResult').hide();
+	});
+	//Embed Result
+jQuery('.remImage').live('click', function() {
+
+	jQuery(this).parent().parent().fadeOut();
+	jQuery(this).parent().find('input').attr('name', 'att_remove[]' );
+
+});
+//Upload Images
+	jQuery("#uploadTrigger").click(function(){
+	   jQuery("#upload-images-ad").click();
+	});
+	jQuery('input[type=file]').change(function(e) {
+		$in = jQuery(this);
+		$in.next().html($in.val());
+		
+	});
+	jQuery(document).on('click', '.MultiFile-preview', function(){ 
+		jQuery('.MultiFile-preview').css('border','none');
+		jQuery(this).css('border','2px solid #e96969');
+	});
+	jQuery(document).on('click', '.edit-post-image-block img', function(){ 
+		jQuery('.edit-post-image-block img').css('border','none');
+		jQuery('.MultiFile-preview').css('border','none');
+		jQuery(this).css('border','1px solid #e96969');
+	});
+	
+	jQuery(document).on('click', 'div.MultiFile-label', function(){ 
+		var count = jQuery(this).index();
+		jQuery('#fIMGcount').val(count);
+	});
+	
+	jQuery(document).on('click', '.edit-post-image-block', function(){ 
+		var length = jQuery('div.MultiFile-label').length;
+		var count = jQuery(this).index();
+		var total = parseInt(length + count);
+		jQuery('#fIMGcount').val(total);
+	});	

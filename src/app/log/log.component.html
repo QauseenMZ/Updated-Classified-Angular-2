@@ -1,0 +1,45 @@
+<section style="margin-top:100px; margin-bottom:0px;background:url(./assets/support/lgpng.PNG);" class="pageHeading" >
+    <div class="row">
+    <h3>Login</h3>
+	<p>Login to Classiera</p>
+    </div>
+</section><!-- End page Heading -->
+
+<section class="container" role="document" >
+<div class="large-6 columns">
+			<div class="row" style="margin-left:350px;">
+				<div class="large-8 large-centered columns">
+					<div class="loginContent">						
+						<div class="loginSocial">
+							<form class="form-item login-form" #f2="ngForm" (ngSubmit)="signIn(f2.value)" >
+																	
+									<div class="inner-addon left-addon name-field">
+									<i class="icon fa fa-user"></i>
+									<input [(ngModel)]="email" type="email" name="email" id="email" value="" placeholder="Email"  class="text input-textarea half" >
+									
+								</div><!-- End Email Div -->
+								<div class="inner-addon left-addon password-field">
+									<i class="icon fa fa-unlock-alt"></i>
+									<input type="password" placeholder="Password" name="pass" [(ngModel)]="pass" value="" class="text input-textarea half" >
+									
+								</div><!-- End Password Div -->
+										<!--<p class="reset">
+											<a class="resetPass" href="">Forget Password?</a>
+										</p>-->
+														<div class="row">
+									<div class="large-12 columns" style="margin-bottom:20px;">
+										<div class="inner-addon left-addon">
+											<input type="hidden" id="submitbtn" name="submit" value="Login">				
+											<button class="button round btnfull form-submit" value="Login" type="submit">LOGIN NOW</button>											
+										</div>
+									</div>
+									<p style="margin-left:12px;">Dont have an account? <a [routerLink]="['signup']">Create your account.</a> It takes less than a minute</p>
+						
+								</div><!-- End LoginButton Div -->
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Custom Login Form -->
+		</section>

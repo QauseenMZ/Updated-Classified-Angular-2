@@ -1,0 +1,19 @@
+<section class="pageHeading" style="margin-top:100px; margin-bottom:0px;">
+	<div class="row">
+		<h2>All Categories</h2>
+        <p><span class="line"><i class="fa fa-circle"></i></span></p>	
+		<p>Welcome To Classiera</p>		
+	</div>
+</section><!-- End page Heading -->
+
+<section class="pageHeading">
+	<div class="row">
+			<img [routerLink]="['vehicles']" src="./assets/support/veh.PNG" class="img-rounded img-responsive" alt="Cinque Terre" width="204" height="136">
+			<img [routerLink]="['mobTabs']" src="./assets/support/elec.PNG" class="img-rounded img-responsive" alt="Cinque Terre" width="204" height="136">
+			<img [routerLink]="['homeAppliances']" src="./assets/support/re.PNG" class="img-rounded img-responsive" alt="Cinque Terre" width="204" height="136">
+	</div><!--End Row -->
+</section><!--End Section adsCategoryslide --><!-- Ads Advertisement Start-->
+
+<app-vehicles [veh_ad_arr]="veh_array"></app-vehicles>
+<app-mob-tab [mt_ad_arr]="mt_array"></app-mob-tab>
+<app-home-app [happ_ad_arr]="ha_array"></app-home-app>

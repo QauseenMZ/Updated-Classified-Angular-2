@@ -1,0 +1,49 @@
+<section class="pageHeading" style="margin-top:100px; margin-bottom:0px;background:url(http://demo.joinwebs.com/classiera/wp-content/uploads/2015/12/inner-bg.png);">
+	<div class="row">
+		<h3>Register</h3>
+		<p>Register To Classiera</p>
+	</div>
+</section><!-- End page Heading -->
+	
+
+<section class="container" role="document" >
+<div class="large-6 columns loginborder " >
+			<div class="row" style="margin-left:350px;">
+				<div class="large-8 large-centered columns" style="padding-top:0px;">
+					<div class="loginContent ">
+						<div class="loginSocial ">						
+							<form #f="ngForm" (ngSubmit)="signup(f.value)">
+									<div class="inner-addon left-addon name-field">
+									<i class="icon fa fa-user"></i>
+									<input name="fname" required="" placeholder="First Name" [(ngModel)]="fname" value="" type="text" class="text input-textarea half" maxlength="30">
+
+								</div><!--End Name Input Div -->
+                <div class="inner-addon left-addon name-field">
+									<i class="icon fa fa-user"></i>
+									<input name="lname" [(ngModel)]="lname" value="" placeholder="Last Name" type="text" class="text input-textarea half" maxlength="30">
+
+								</div><!--End Last Name Input Div -->
+								<div class="inner-addon left-addon email-field">
+									<i class="icon fa fa-envelope"></i>
+									<input placeholder="Email Address" [(ngModel)]="email" type="email" id="email" value="" name="email" class="text input-textarea half"  maxlength="50" required="">
+	
+								</div><!--End Email Input Div -->
+									<div class="inner-addon left-addon password-field">
+									<i class="icon fa fa-unlock-alt"></i>
+									<input  required="" title="6 characters minimum" placeholder="Password" [(ngModel)]="pass" value="" type="password"  name="id" name="pass" class="text input-textarea half" maxlength="15">
+									
+								</div><!--End password Input Div -->
+					
+								<div class="row">
+									<div class="large-12 columns">
+										<div class="inner-addon left-addon">
+											<button class="button round btnfull form-submit" type="submit">Register</button>
+										</div>
+									</div>
+								</div><!--End Registor Button Div -->
+															</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--End Custom Register Section --></section>

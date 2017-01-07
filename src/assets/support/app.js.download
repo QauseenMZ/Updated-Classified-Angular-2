@@ -1,0 +1,10 @@
+jQuery(function () {
+	jQuery.noConflict();
+	jQuery(document).foundation({
+	  orbit: {
+	  	slide_selector: 'div',
+	  	bullets: false,
+	  }
+	});
+});
+

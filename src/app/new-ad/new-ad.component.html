@@ -1,0 +1,70 @@
+<section class="pageHeading" style="margin-top:100px; margin-bottom:0px;background:url(http://demo.joinwebs.com/classiera/wp-content/uploads/2015/12/inner-bg.png);">
+	<div class="row">
+		<h3>SUBMIT ADS</h3>	
+		<p>POST ADS IN CLASSIERA</p>		
+	</div> 
+	</section><!-- End page Heading -->
+
+<div *ngIf="log === 'true'">
+	<div class="large-8 medium-12 large-centered medium-centered columns">
+  <section class="adSubmit boxPad">
+  <div> 
+
+<label for="select">Select Category:</label>
+<!--Validation on Select is not working why-->
+<select [(ngModel)]="cat" autofocus required> 
+  <option value="Vehicle" >Vehicle</option>
+  <option value="MobTabs" >Mobile & Tablets</option>
+  <option value="HomeApp" >Home Appiances</option>
+  </select>
+
+<form #f="ngForm" (ngSubmit)="newAd(f.value)">
+
+    <div class="field"> 
+    <input type="text" id="title" placeholder="Ad Title" name="title" ngModel required>
+    <input type="text" id="contact" placeholder="Contact Number" name="contact" ngModel required>
+
+    <div [ngSwitch]="cat">
+     <div *ngSwitchCase="'Vehicle'">
+       Vehicle
+       <input type="text"  id="brand" placeholder="Brand" name="brand" ngModel>
+
+      <input type="text" id="model" placeholder="Model" name="model" ngModel>
+
+      <input type="number" id="kms" placeholder="Kms Driven" name="kms" ngModel>
+
+      <input type="text" id="features" placeholder="Features..." name="features" ngModel>
+     </div>    
+
+     <div *ngSwitchCase="'MobTabs'">
+       <input type="text"  id="brand" placeholder="Brand" name="brand" ngModel>
+
+      <input type="text" id="warrenty" placeholder="Warrenty" name="warrenty" ngModel>
+       
+      <input type="text"  id="accessories" placeholder="Accessories" name="accessories" ngModel>
+
+      <input type="text" id="details" placeholder="Details.." name="details" ngModel>
+     </div>
+     <div *ngSwitchCase="'HomeApp'">
+      <input type="text" id="type" placeholder="Type" name="type" ngModel>
+      <input type="text" id="condition" placeholder="Condition" name="condition" ngModel>
+     </div>
+
+   </div>
+
+    <input type="number" id="price" placeholder="Price in Rs." name="price" ngModel required>
+
+    <input type="text" id="area" placeholder="Area & Location" name="area" ngModel required>
+
+    <input type="text" id="img" placeholder="Paste Image URL Here" name="img" ngModel required>
+    </div>
+  
+  <button type="submit" class="ui button">Submit</button>
+ </form>
+</div>
+  </section></div></div>
+
+<div *ngIf="log === 'false' || log === null" class="large-8 medium-12 large-centered medium-centered columns">
+<h3 style="margin-top:70px; text-align: center;">Please Login or Get Registered to Submit Ad</h3>				
+</div>
+

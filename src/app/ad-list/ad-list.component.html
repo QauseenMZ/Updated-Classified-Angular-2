@@ -1,0 +1,16 @@
+
+<section id="advertisementv1">
+		
+		<div class="advContentv1">
+			<div class="tabs-content">
+				<div class="content active" id="panel1">
+					<div class="loop-content">
+					
+<app-ad-details *ngFor="let item of ad_list; let i = index" [item]="item" [index]="i">
+</app-ad-details>
+
+</div><!--loop-content-->
+				</div><!-- End panel1-->
+			</div><!-- End tabs-content-->
+		</div><!-- End advContentv1-->
+</section>

@@ -1,0 +1,141 @@
+<section style="margin-top:100px; margin-bottom:0px;background:url(./assets/support/lgpng.PNG);" class="pageHeading" >
+    <div class="row">
+    <h3>{{item.title}}</h3>
+	<p>{{item.category}}</p>
+    </div>
+</section><!-- End page Heading -->
+
+<div [ngSwitch]="item_type" style="margin-left: 50px; margin-right: 50px;">
+  <div *ngSwitchCase="'vehicle'"> <!-- If Item is a Vehicle-->
+  <section id="advertisementv1">
+	<div class="row">
+	<div class="large-10 medium-8 large-centered medium-centered columns">
+				<section class="imageSlider">				
+				<div class="orbit-container">
+				<div class="example-orbit orbit-slides-container" data-orbit="" style="height: 456px;">				
+					<div data-orbit-slide="headline-0" class="" style="z-index: 2; margin-left: 100%;"></div>
+					<div data-orbit-slide="headline-1" class="active" style="z-index: 4; margin-left: 0%;">
+					<img src="{{item.img}}" attr.data-big="{{item.img}}" >
+					</div>
+				</div>
+				</div>
+				</section><!--end image slider-->
+				
+				<section class="adDetail boxPad">
+					<div class="adHeading">
+					<div class="fa fa-desktop">
+					<h4>Ad Details:</h4></div>
+					</div>
+					
+					<div class="adDetails">
+					<ul class="inline-list">
+						<li><span>Price</span>{{item.price}}</li>
+						<li><span>Location</span>{{item.area}}</li>
+						<li><span>Brand</span>{{item.area}}</li>
+						<!--Item Condition-->
+						<li><span>Model</span>{{item.model}}</li><!--Item Condition-->
+						<li><span>Kms Driven</span>{{item.kms_driven}}</li>
+            <li><span>Owner</span>{{item.owner}}</li>
+					</ul>
+					</div><!-- End adDetails --><br>
+					
+					<div class="adDescription">
+					<h4>Description & Features</h4>					
+						<p>{{item.features}} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat auctor felis. Etiam semper elementum est vitae efficitur. Praesent suscipit laoreet metus eget accumsan. Curabitur lectus elit, imperdiet eget convallis a, ornare id ex.</p>
+<p>Vestibulum quis rhoncus felis. Nam id tempus velit. Suspendisse malesuada lectus a tortor sollicitudin dictum non ut ipsum. Etiam blandit ipsum nisl, et mollis ante maximus id. In a posuere arcu. Aliquam luctus, justo a mollis vehicula, neque arcu elementum velit, sit amet vestibulum tellus sem in elit.</p>
+<p>Vivamus luctus nunc ac risus vulputate bibendum. Praesent fringilla libero ut vulputate ornare. Quisque malesuada in ex nec viverra. Donec sed justo non justo aliquam porttitor nec dapibus felis. Sed posuere fringilla ante, et pulvinar quam gravida sagittis. Pellentesque sapien risus, placerat sed tristique id, scelerisque a elit.</p>
+										</div><!-- End adDescription -->
+				</section>
+				</div>
+	</div><!-- End Row-->
+</section>
+  </div>
+  
+  
+  <div *ngSwitchCase="'MobTab'"> <!-- If Item is a MobTab-->
+    <section id="advertisementv1">
+	<div class="row">
+	<div class="large-10 medium-8 large-centered medium-centered columns">
+				<section class="imageSlider">				
+				<div class="orbit-container">
+				<div class="example-orbit orbit-slides-container" data-orbit="" style="height: 456px;">				
+					<div data-orbit-slide="headline-0" class="" style="z-index: 2; margin-left: 100%;"></div>
+					<div data-orbit-slide="headline-1" class="active" style="z-index: 4; margin-left: 0%;">
+					<img src="{{item.img}}" attr.data-big="{{item.img}}" >
+					</div>
+				</div>
+				</div>
+				</section><!--end image slider-->
+				
+				<section class="adDetail boxPad">
+					<div class="adHeading">
+					<div class="fa fa-desktop">
+					<h4>Ad Details:</h4></div>
+					</div>
+					
+					<div class="adDetails">
+					<ul class="inline-list">
+						<li><span>Price</span>{{item.price}}</li>
+						<li><span>Location</span>{{item.area}}</li>
+						<li><span>Brand</span>{{item.area}}</li>
+						<!--Item Condition-->
+						<li><span>Warrenty</span>{{item.warrenty}}</li><!--Item Condition-->
+						<li><span>Accessories</span>{{item.accessories}}</li>
+            <li><span>Owner</span>{{item.owner}}</li>
+					</ul>
+					</div><!-- End adDetails --><br>
+					
+					<div class="adDescription">
+					<h4>Description & Features</h4>					
+						<p>{{item.details}} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat auctor felis. Etiam semper elementum est vitae efficitur. Praesent suscipit laoreet metus eget accumsan. Curabitur lectus elit, imperdiet eget convallis a, ornare id ex.</p>
+<p>Vestibulum quis rhoncus felis. Nam id tempus velit. Suspendisse malesuada lectus a tortor sollicitudin dictum non ut ipsum. Etiam blandit ipsum nisl, et mollis ante maximus id. In a posuere arcu. Aliquam luctus, justo a mollis vehicula, neque arcu elementum velit, sit amet vestibulum tellus sem in elit.</p>
+<p>Vivamus luctus nunc ac risus vulputate bibendum. Praesent fringilla libero ut vulputate ornare. Quisque malesuada in ex nec viverra. Donec sed justo non justo aliquam porttitor nec dapibus felis. Sed posuere fringilla ante, et pulvinar quam gravida sagittis. Pellentesque sapien risus, placerat sed tristique id, scelerisque a elit.</p>
+										</div><!-- End adDescription -->
+				</section>
+				</div>
+	</div><!-- End Row-->
+</section>
+  </div>
+  
+  
+  <div *ngSwitchCase="'HomeApp'"> <!-- If Item is a Homeapp-->
+    <section id="advertisementv1">
+	<div class="row">
+	<div class="large-10 medium-8 large-centered medium-centered columns">
+				<section class="imageSlider">				
+				<div class="orbit-container">
+				<div class="example-orbit orbit-slides-container" data-orbit="" style="height: 456px;">				
+					<div data-orbit-slide="headline-0" class="" style="z-index: 2; margin-left: 100%;"></div>
+					<div data-orbit-slide="headline-1" class="active" style="z-index: 4; margin-left: 0%;">
+					<img src="{{item.img}}" attr.data-big="{{item.img}}" >
+					</div>
+				</div>
+				</div>
+				</section><!--end image slider-->
+				
+				<section class="adDetail boxPad">
+					<div class="adHeading">
+					<div class="fa fa-desktop">
+					<h4>Ad Details:</h4></div>
+					</div>
+					
+					<div class="adDetails">
+					<ul class="inline-list">
+						<li><span>Price</span>{{item.price}}</li>
+						<li><span>Location</span>{{item.area}}</li>
+						<li><span>Type</span>{{item.type}}</li>
+            <li><span>Owner</span>{{item.owner}}</li>
+					</ul>
+					</div><!-- End adDetails --><br>
+					
+					<div class="adDescription">
+					<h4>Description & Features</h4>					
+						<p>{{item.condition_details}} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer placerat auctor felis. Etiam semper elementum est vitae efficitur. Praesent suscipit laoreet metus eget accumsan. Curabitur lectus elit, imperdiet eget convallis a, ornare id ex.</p>
+<p>Vestibulum quis rhoncus felis. Nam id tempus velit. Suspendisse malesuada lectus a tortor sollicitudin dictum non ut ipsum. Etiam blandit ipsum nisl, et mollis ante maximus id. In a posuere arcu. Aliquam luctus, justo a mollis vehicula, neque arcu elementum velit, sit amet vestibulum tellus sem in elit.</p>
+<p>Vivamus luctus nunc ac risus vulputate bibendum. Praesent fringilla libero ut vulputate ornare. Quisque malesuada in ex nec viverra. Donec sed justo non justo aliquam porttitor nec dapibus felis. Sed posuere fringilla ante, et pulvinar quam gravida sagittis. Pellentesque sapien risus, placerat sed tristique id, scelerisque a elit.</p>
+										</div><!-- End adDescription -->
+				</section>
+				</div>
+	</div><!-- End Row-->
+</section>
+</div>

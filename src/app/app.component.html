@@ -1,3 +1,73 @@
-<h1>
-  {{title}}
-</h1>
+<!DOCTYPE html>
+
+<html lang="en-US">
+	
+<body class="page page-id-55 page-template page-template-template-homepage-v2 page-template-template-homepage-v2-php single-author">
+		
+	<section id="header" style="width:100%">
+		<header style="position:fixed;top:0px; z-index: 100;background-color: rgba(255,255,255,0.9);padding-right:50px;padding-left:50px;clear:both;" class="contain-to-grid sticky clearfix">
+				<section id="navBar" >
+		<div>
+			<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+				<ul class="title-area">
+					<li class="name">
+						<a href="">
+							<img src="./assets/support/logo.png" alt="Logo">		
+						</a><!--End Logo -->
+					</li>
+						</ul>
+				
+			<section class="top-bar-section top-bar-section-v1" >
+					<ul *ngIf="showDashboard == false" class="login right">
+						<li>
+								<a [routerLink]="['login']"><i class="fa fa-sign-in"></i>Login</a>
+						</li>
+					</ul>	
+					<ul *ngIf="showDashboard == false" class="login right">
+						<li>
+								<a [routerLink]="['signup']"><i class="fa fa-sign-in"></i>Get Registered</a>
+						</li>
+					</ul>
+
+					<ul *ngIf="showDashboard == true" class="login right">
+						<li>
+								<a (click)="signOut()" [routerLink]="['']"><i class="fa fa-sign-in"></i>Logout</a>
+						</li>
+					</ul>
+					<ul class="newAdv1 right">
+						<li><a [routerLink]="['newAd']"><i class="fa fa-pencil-square-o"></i>Submit Ad</a></li>
+					</ul>
+					<!--Auto Nav Start -->
+										<ul id="menu-top-menu" class="right">
+<li id="menu-item-143" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children active has-dropdown menu-item-143 active not-click">
+    <a href="">Home</a>
+</li>
+<li id="menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-144 active">
+    <a [routerLink]="['aboutUs']">About Us</a></li>
+<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145 active">
+    <a [routerLink]="['allCategories']">All Categories</a></li>
+<li *ngIf="showDashboard == true" id="menu-item-272" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-dropdown menu-item-272 active not-click">
+    <a [routerLink]="['dashboard']">Dashboard</a>
+</li>
+<li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153 active"><a [routerLink]="['contactUs']">Contact</a></li>
+</ul>								
+					<!--Auto Nav End -->
+				</section></nav>
+		</div>
+	</section>
+		</header><!-- end header -->
+	</section><!--ClassiEra Header End -->
+
+<!--<app-categories></app-categories>-->
+<router-outlet></router-outlet> 
+<!--<div *ngIf="showDashboard == true">
+    <h3>{{ currentUser }}</h3>
+    <button>Dashboard</button>
+</div>-->
+<!--<app-log></app-log>-->
+<!--<app-vehicles [veh_ad_arr]="veh_array"> </app-vehicles>
+<app-new-ad></app-new-ad>-->
+<!--<app-dashboard></app-dashboard>-->
+
+</body><iframe allowtransparency="true" frameborder="0" id="abs-top-frame" style="position: fixed !important; z-index: 2147483647 !important; overflow: hidden !important; top: 0px !important; left: 0px !important; right: 0px !important; width: 0px !important; height: 0px !important; max-height: none !important; min-height: 0px !important; margin: 0px auto !important; padding: 0px !important; border: 0px !important; background-color: transparent !important; display: none !important;"></iframe>
+</html> 

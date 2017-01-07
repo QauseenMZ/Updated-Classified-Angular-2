@@ -1,0 +1,677 @@
+@media only screen and (min-width: 320px) and (max-width: 480px){
+	body#boxed{
+		width:100%;
+	}
+	.topBar ul.topRight{
+		float: none !important;
+	}
+	.topBar ul.topRight li{
+		margin-right: 10px;
+		margin-left:0;
+	}
+	.sliderMore{
+		display: none;
+	}
+	.hideME{
+		display: none;
+	}
+	.follow-btn .fav-form input[type="submit"]{
+		width: 48%;
+	}
+	#advertisement .view{
+		display: none;
+	}
+	#advertisement .advTopBar .tabb a{
+		padding: 0 10px !important;
+	}
+	.follow-btn .browse-favourite a{
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	/* 
+	NavBar
+	========================================================================== */
+	.contain-to-grid .top-bar{
+		padding: 0 !important; 
+	}
+	.top-bar ul.title-area{
+		padding-bottom: 15px !important;
+		margin: 0 !important;
+	}
+	.top-bar ul.newAd li a{
+		border-radius: 0;
+	}
+	.top-bar .top-bar-section li:not(.has-form) a:not(.button):not(.uploadBtn){
+		border-radius: 0;
+		border-bottom: 1px solid #e6e6e6;
+	}
+	.top-bar.expanded .title-area{
+		background: #fff !important;
+	}
+	.top-bar-section .has-dropdown > a::after{
+		display: block !important;
+		border-color:transparent transparent transparent rgba(0, 0, 0, 1);
+	}
+	/* 
+	   slider
+	   ========================================================================== */
+	.mainSearch .advanceSearch .advSearchBtn{
+		display: none;
+	}
+	.mainSearch .advanceSearch .advSeachBar{
+		position: relative;
+	}
+	.mainSearch .advanceSearch .advSeachBar form{
+		padding: 0 15px;
+	}
+	.mainSearch .advanceSearch .advSeachBar input[type='text']{
+		width: 100%;
+	}
+	.mainSearch .advanceSearch .advSeachBar select{
+		width: 100%;
+	}
+	.mainSearch .advanceSearch .advSeachBar .range{
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.mainSearch .advanceSearch .advSeachBar button.submit{
+		width: 100%;
+	}
+	.adsCategoryslide .catSlide .customNav{
+		display: none;
+	}
+	/* 
+		parallax   
+	   ========================================================================== */
+	.parallax{
+		height: 100%;
+	}
+	.parallax .section{
+		padding-bottom: 40px;
+	}
+	.parallax .section .parallaxText{
+		padding: 30px 0 0 10px;
+	}
+	.parallax .section .parallaxText p{
+		width: 100%;
+	}
+	/* 
+		map bg   
+	   ========================================================================== */
+	#adLocations .mapBg{
+		background-size: cover;
+		width: 100%;
+	}
+	/*advertisement*/
+	#advertisement .advTopBar .tabb a{
+		font-size: 12px;
+		padding: 0 14px;
+	}
+	#advertisement .advTopBar .view{
+		text-align: center;
+	}
+	#pricingPlan .priceTable .pricePlan{
+		margin-bottom: 20px;
+	}
+	/* 
+		Add Section   
+	   ========================================================================== */
+	#advertisement .tabs-content.listView .listAdv-desc{
+		padding: 0 0 10px 10px;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-tags .listTags{
+		margin-bottom: 10px;
+	}
+	.userComments .loguserComment .btn{
+		position: static;
+	}
+	#advertisement .tabs-content .advItems .advItem .advItem-img{
+		width: 100% !important;
+		height: auto !important;
+	}
+	#advertisement .tabs-content .advItems .advItem{
+		height: auto !important;
+	}
+	/* 
+		Ad destail page
+	   ========================================================================== */
+	.adDetail .adDetails ul li{
+		width: 100% !important;
+	}
+	.classiera-rating .post-ratings{
+		float: left;
+		width: 67%;
+	}
+	.classiera-rating .post-ratings em{
+		display: none;
+	}
+	.authorProfile .authorDetails .authorUrl{
+		width: 100%;
+	}
+	footer .footer-bottom p{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	/* 
+		footer
+	   ========================================================================== */
+	footer .footer-bottom .footer-social a{
+		margin-bottom: 5px !important;
+	}
+	footer #back-to-top{
+		right: 10px;
+		bottom: 170px;
+	}
+	footer .widgetBox{
+		margin-bottom: 30px;
+	}
+	/* 
+		Home page v2
+	   ========================================================================== */
+	.customBg .customBgText{
+		padding-top: 100px;
+	}
+	.customBg .customBgText h1{
+		font-size: 30px;
+		line-height: 30px;
+	}
+	.customBg .customBgText p{
+		width: 100%;
+	}
+	.customBg .customBgSearch form input{
+		margin-bottom: 5px !important;
+	}
+	.customBg .customBgSearch form select{
+		margin-bottom: 5px !important;
+	}
+	#advertisementv1 .advTopBarv1 .tabs .tab-title:first-of-type{
+		margin:0;
+	}
+	#advertisementv1 .advTopBarv1 .tabs .tab-title a{
+		margin-left: 3px;
+		padding: 0 5px;
+	}
+	#companyV1 .sponsers{
+		text-align: center;
+	}
+	#companyV1 .sponsers a{
+		margin: 0;
+	}
+	.parallaxTextV1{
+		padding:50px 0 50px 10px;
+	}
+	/* 
+		Home page v3
+	   ========================================================================== */
+	.classiEraAdvantage .icon-box .icon{
+		margin-right: 9px;
+	}
+	/* 
+		Post Page
+	   ========================================================================== */
+	.authorProfile .authorDetails .authorPhone{
+		width: 100%;
+	}
+	.userAds .ad-description h5{
+		width: 100%;
+	}
+	.userAds .ad-description ul.inline-list > li{
+		float: none;
+		margin-bottom:5px;
+		margin-left:0;
+
+	}
+	.userAds .ad-description ul li:nth-of-type(1){
+		margin: 0;
+		margin-bottom:5px;
+	}
+	.radio p label::before{
+		top: 5px;
+	}
+	.imageSlider{
+		height: 200px;
+	}
+	.imageSlider .example-orbit.orbit-slides-container{
+		height: 200px !important;
+	}
+	.imageSlider .example-orbit img{
+		height: auto !important;
+	}
+	.imageSlider .orbitSlide{
+		visibility: hidden;
+	}
+	#comingSoon .comingSoon-content ul#countdown li{
+		width: 100%;
+	}
+	.newsletter.newsletter-subscription table tr{
+		float: none !important;
+		width: 100% !important;
+	}
+	footer #back-to-top{
+		right: 30px !important;
+	}
+	#pricingPlanV1 .priceTable.active{
+		transform: scale(1, 1) !important;
+	}
+	.orbit-container .orbit-slides-container > *{height:178px;}
+	#ab-video iframe{height:100%;}
+	  .top-bar ul.title-area .name{
+  	height: 3.21429rem !important;
+  }
+	.top-bar ul.title-area .name img{
+   	height: 100% !important;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 640px){
+	body#boxed{
+		width:100%;
+	}
+	.slideMore{
+		display: none;
+	}
+	.hideME{
+		display: none;
+	}
+	.adsCategoryslide .catSlide .customNav{
+		display: none;
+	}
+	.adDetail .adDetails ul li{
+		width: 100% !important;
+	}
+	  .top-bar ul.title-area .name{
+  	height: 3.21429rem !important;
+  }
+	.top-bar ul.title-area .name img{
+   	height: 100% !important;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 760px){
+	body#boxed{
+		width:100%;
+	}
+	.topBar ul.topRight li{
+		margin-right: 10px;
+		margin-left:0;
+	}
+	/* 
+	NavBar
+	========================================================================== */
+	.contain-to-grid .top-bar{
+		padding: 0 !important; 
+	}
+	.top-bar ul.title-area{
+		padding-bottom: 15px !important;
+		margin: 0 !important;
+	}
+	.top-bar ul.newAd li a{
+		border-radius: 0;
+	}
+	.top-bar .top-bar-section li:not(.has-form) a:not(.button):not(.uploadBtn){
+		border-radius: 0;
+		border-bottom: 1px solid #e6e6e6;
+	}
+	.top-bar.expanded .title-area{
+		background: #fff !important;
+	}
+	.top-bar-section .has-dropdown > a::after{
+		display: block !important;
+		border-color:transparent transparent transparent rgba(0, 0, 0, 1);
+	}
+	/* 
+	   slider
+	   ========================================================================== */
+	.mainSearch .advanceSearch .advSearchBtn{
+		display: none;
+	}
+	.mainSearch .advanceSearch .advSeachBar{
+		position: relative;
+	}
+	.mainSearch .advanceSearch .advSeachBar form{
+		padding: 0 15px;
+	}
+	.mainSearch .advanceSearch .advSeachBar input[type='text']{
+		width: 100%;
+	}
+	.mainSearch .advanceSearch .advSeachBar select{
+		width: 100%;
+	}
+	.mainSearch .advanceSearch .advSeachBar .range{
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.mainSearch .advanceSearch .advSeachBar button.submit{
+		width: 100%;
+	}
+	/* 
+		parallax   
+	   ========================================================================== */
+	.parallax{
+		height: 100%;
+	}
+	.parallax .section{
+		padding-bottom: 40px;
+	}
+	.parallax .section .parallaxText{
+		padding: 30px 0 0 10px;
+	}
+	.parallax .section .parallaxText p{
+		width: 100%;
+	}
+	/* 
+		map bg   
+	   ========================================================================== */
+	#adLocations .mapBg{
+		background-size: cover;
+		width: 100%;
+	}
+	/*advertisement*/
+	#advertisement .advTopBar .tabs{
+		width: 280px;
+	}
+	#advertisement .advTopBar .tabb a{
+		font-size: 12px;
+		padding: 0 14px;
+	}
+	#advertisement .advTopBar .view{
+		text-align: center;
+	}
+	#pricingPlan .priceTable .pricePlan{
+		margin-bottom: 20px;
+	}
+	/* 
+		Add Section   
+	   ========================================================================== */
+	#advertisement .tabs-content.listView .listAdv-desc{
+		padding: 0 0 10px 10px;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-tags .listTags{
+		margin-bottom: 10px;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-desc-detail{
+		overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   line-height: 16px;     /* fallback */
+	   max-height: 32px;      /* fallback */
+	   -webkit-line-clamp: 2; /* number of lines to show */
+	   -webkit-box-orient: vertical;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-desc-header .icon h4{
+		display: inline !important;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-desc-header .icon h4 a{
+		line-height: 20px !important;
+	}
+	.rating .post-ratings em{
+		display: none;
+	}
+	#advertisement .tabs-content.listView .list-img img{
+		height: 100% !important;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-tags .listReadMore a{
+		padding: 0 24px;
+	}
+	#advertisement .tabs-content.listView .list-img .listcomment{
+		width: 93%;
+	}
+	.userComments .loguserComment .btn{
+		position: static;
+		display: block;
+	}
+		/* 
+		Ad destail page
+	   ========================================================================== */
+	.adDetail .adDetails ul li{
+		width: 100% !important;
+	}
+	.classiera-rating .post-ratings{
+		float: left;
+		width: 85%;
+	}
+	.classiera-rating .post-ratings em{
+		/*display: none;*/
+	}
+	.authorProfile .authorDetails .authorUrl{
+		width: 100%;
+	}
+	.footer-social.right{
+		float: none !important;
+	}
+	.userAds .ad-description ul li{
+		margin-bottom: 5px;
+		margin-left: 0;
+		margin-right: 5px;
+	}
+	footer #back-to-top{
+		right: 10px;
+		bottom: 170px;
+	}
+	footer .footer-bottom .footer-social a{
+		margin-bottom: 5px !important;
+	}
+	footer .widgetBox{
+		margin-bottom: 30px;
+	}
+
+	/* 
+		Home page v2
+	   ========================================================================== */
+	.customBg .customBgText{
+		padding-top: 100px;
+	}
+	.customBg .customBgText h1{
+		font-size: 60px;
+		line-height: 60px;
+	}
+	.customBg .customBgText p{
+		width: 100%;
+	}
+	.customBg .customBgSearch form input{
+		margin-bottom: 5px !important;
+	}
+	.customBg .customBgSearch form select{
+		margin-bottom: 5px !important;
+	}
+	#advertisementv1 .advTopBarv1 .tabs .tab-title:first-of-type{
+		margin:0;
+	}
+	#advertisementv1 .advTopBarv1 .tabs .tab-title a{
+		margin-left: 3px;
+		padding: 0 8px;
+	}
+	#companyV1 .sponsers{
+		text-align: center;
+	}
+	#companyV1 .sponsers a{
+		margin: 0;
+	}
+	.parallaxTextV1{
+		padding:100px 0 100px 10px;
+	}
+	#comingSoon .comingSoon-content ul#countdown li{
+		width: 50%;
+	}
+	footer .footer-bottom p{
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.footer-social.right{
+		float: none !important;
+		text-align: center;
+	}
+	  .top-bar ul.title-area .name{
+  	height: 3.21429rem !important;
+  }
+	.top-bar ul.title-area .name img{
+   	height: 100% !important;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	body#boxed{
+		width:100%;
+	}
+	.topBar ul.topRight li{
+		margin-right: 10px;
+		margin-left:0;
+	}
+	/* 
+	NavBar
+	========================================================================== */
+	.contain-to-grid .top-bar{
+		padding: 0 !important; 
+	}
+	.top-bar ul.title-area{
+		padding-bottom: 15px !important;
+		margin: 0 !important;
+	}
+	.top-bar ul.newAd li a{
+		border-radius: 0;
+	}
+	.top-bar .top-bar-section li:not(.has-form) a:not(.button):not(.uploadBtn){
+		border-radius: 0;
+		border-bottom: 1px solid #e6e6e6;
+	}
+	.top-bar.expanded .title-area{
+		background: #fff !important;
+	}
+	.top-bar-section .has-dropdown > a::after{
+		display: block !important;
+		border-color:transparent transparent transparent rgba(0, 0, 0, 1);
+	}
+	/* 
+	   slider
+	   ========================================================================== */
+
+	.mainSearch .advanceSearch .advSearchBtn{
+		display: none;
+	}
+	.mainSearch .advanceSearch .advSeachBar{
+		position: relative;
+	}
+	.mainSearch .advanceSearch .advSeachBar form{
+		padding: 0 15px;
+	}
+	.mainSearch .advanceSearch .advSeachBar input[type='text']{
+		width: 49%;
+	}
+	.mainSearch .advanceSearch .advSeachBar select{
+		width: 49%;
+	}
+	.mainSearch .advanceSearch .advSeachBar .range{
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.mainSearch .advanceSearch .advSeachBar button.submit{
+		width: 100%;
+	}
+	/* 
+		parallax   
+	   ========================================================================== */
+	.parallax{
+		height: 100%;
+	}
+	.parallax .section{
+		padding-bottom: 40px;
+	}
+	.parallax .section .parallaxText{
+		padding: 30px 0 0 10px;
+	}
+	.parallax .section .parallaxText p{
+		width: 100%;
+	}
+	/* 
+		map bg   
+	   ========================================================================== */
+	#adLocations .mapBg{
+		background-size: cover;
+		width: 100%;
+	}
+	/*advertisement*/
+	#advertisement .advTopBar .tabs{
+		width: 280px;
+	}
+	#advertisement .advTopBar .tabb a{
+		font-size: 12px;
+		padding: 0 14px;
+	}
+	#advertisement .advTopBar .view{
+		text-align: center;
+	}
+	#pricingPlan .priceTable .pricePlan{
+		margin-bottom: 20px;
+	}
+	/* 
+		Add Section   
+	   ========================================================================== */
+	#advertisement .tabs-content.listView .listAdv-desc{
+		padding: 0 0 10px 10px;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-tags .listTags{
+		margin-bottom: 10px;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-desc-detail{
+		overflow: hidden;
+	   text-overflow: ellipsis;
+	   display: -webkit-box;
+	   line-height: 16px;     /* fallback */
+	   max-height: 32px;      /* fallback */
+	   -webkit-line-clamp: 2; /* number of lines to show */
+	   -webkit-box-orient: vertical;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-desc-header .icon h4 a{
+		line-height: 20px !important;
+	}
+	.rating .post-ratings em{
+		display: none;
+	}
+	#advertisement .tabs-content.listView .list-img img{
+		height: 100% !important;
+	}
+	#advertisement .tabs-content.listView .listAdv-desc .listAdv-tags .listReadMore a{
+		padding: 0 40px;
+	}
+	#advertisement .tabs-content.listView .list-img .listcomment{
+		width: 93%;
+	}
+	.userComments .loguserComment .btn{
+		position: static;
+		display: block;
+	}
+	#comingSoon .comingSoon-content ul#countdown li{
+		width: 50%;
+	}
+	footer #back-to-top{
+		right: 10px;
+		bottom: 170px;
+	}
+	.customBg .customBgText p{
+		width: 100%;
+	}
+	footer .footer-bottom .footer-social a{
+		margin-bottom: 5px !important;
+	}
+	footer .footer-bottom p{
+		display: block;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.footer-social.right{
+		float: none !important;
+		text-align: center;
+	}
+	.adsCategoryslide .catSlide .customNav{
+		display: none;
+	}
+	  .top-bar ul.title-area .name{
+  	height: 3.21429rem !important;
+  }
+	.top-bar ul.title-area .name img{
+   	height: 100% !important;
+  }
+}
